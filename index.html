@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Formulario de datos personales</div>
+        <form id="form-validation" novalidate>
+            <div class="form-group">
+                <span>Nombre</span>
+                <input type="text" placeholder="Ingresa tu nombre" required>
+
+                <small class="error-msn">Por favor ingrese el dato requerido</small>
+            </div>
+            <div class="form-group">
+                <span>Apellido</span>
+                <input type="text" placeholder="Ingresa tu apellido" required>
+                <small class="error-msn">Por favor ingrese el dato requerido</small>
+            </div>
+            <div class="form-group">
+                <span>Fecha de Nacimiento</span>
+                <input type="date" required>
+                <small class="error-msn">Por favor ingrese el dato requerido</small>
+            </div>
+            <div class="form-group">
+                <span>Email</span>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <small class="error-msn">Por favor ingrese el dato requerido</small>
+            </div>
+            <div class="form-group">
+                <span>País</span>
+                <select id="pais" required>
+                    <option value="">Selecciona tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="Guyana">Guyana</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Otro">Otro</option>
+                </select>
+                <small class="error-msn">Por favor ingrese el dato requerido</small>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="button" value="Enviar">
+                <button id="my-button" type="button">Contraste</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="externo.js"></script>
+</body>
+</html>

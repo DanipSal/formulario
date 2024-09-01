@@ -1,0 +1,89 @@
+*{ margin: 0px;
+   padding: 0px;
+   box-sizing: 0px;
+
+}
+
+body {
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.container {
+   
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+select {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.button:hover {
+    background-color: #0056b3;
+}
+
+small.error-msn {
+    color: red;
+    display: none; 
+}
+
+
+body.contrast {
+    background-color: #000; 
+    color: #fff; 
+}
+
+body.contrast .container {
+    background-color: #222; 
+    color: #fff; 
+}
+
+body.contrast input[type="text"],
+body.contrast input[type="date"],
+body.contrast input[type="email"],
+body.contrast select {
+    background-color: yellow; 
+    color: #000; 
+    border: 1px solid #3bf30c; 
+}
+
+body.contrast button.button {
+    background-color: #444; 
+}
+
+body.contrast button.button:hover {
+    background-color: #666; 
+}
